@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Dynamic Web Fundamentals - David Fernandes</title>
+    <meta name="description" content="WDD 231 - Dynamic Web Fundamentals | David da Rocha Fernandes | My own Introductory page featuring personal information, links to LinkedIn, GitHub Profile page and Chamber page. Explore to learn more about my home country and my interests.">
+    <meta name="author" content="David da Rocha Fernandes">
+
+    <!-- Links to API and CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="title">
+                <figure id="person">
+                    <img src="images/myself.jpeg" alt="Image of myself">
+                </figure>
+                <h1>
+                    <strong>David R. Fernandes</strong>
+                </h1>
+                <button class="hamburger">☰</button>
+            </div> 
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#" target="_blank">Chamber</a>
+            <a href="#" target="_blank">GitHub Profile</a>
+            <a href="https://www.linkedin.com/in/david-fernandes-853277288/?trk=opento_sprofile_details" target="_blank">LinkedIn</a>
+        </nav>
+
+        <main>
+            <div class="all-sections">
+                <div class="work-place">
+                    <section class="card" id="sect1">
+                        <h2>Course Work</h2>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </section>
+        
+                    <section class="card" id="sect2">
+                        <h2>São Paulo, Brazil</h2>
+                        <figure>
+                            <img src="images/sao-paulo.avif" alt="Picture of Sao Paulo">
+                            <figcaption>Estaiada Bridge</figcaption>
+                        </figure>
+                    </section>
+                </div>
+
+                <section class="card" id="sect3">
+                    <h2>Web and Computer Programming Certificate</h2>
+                    <div id="filters">
+                        <button onclick="filteredCourses('all')">All</button>
+                        <button onclick="filteredCourses('WDD')">WDD</button>
+                        <button onclick="filteredCourses('CSE')">CSE</button>
+                    </div>
+                    <div id="number-credits"></div>
+                    <div id="courses-list"></div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <p class="first-line">&copy;<span id="current-year"></span> - David da Rocha Fernandes - Brazil <img src="images/brazil.jpg" alt="Image of Brazil's flag" id="flag"></p>
+            <p id="lastModified" class="second-line"></p>
+        </footer>
+    </div>
+
+    <script src="scripts/home.js" defer></script>
+</body>
+
+</html>
