@@ -1,0 +1,66 @@
+[
+    {
+        "name": "HiTech",
+        "address": "Av. da Liberdade 245, 1250-143 Lisboa",
+        "phone": "+351 21 123 4567",
+        "website": "https://hi-techwonder.com/",
+        "image": "hi-tech.avif",
+        "membership": 1,
+        "description": "Leading provider of innovative tech solutions for startups and enterprises in Lisbon."
+    },
+    {
+        "name": "Casa Periquita",
+        "address": "Rua Augusta 89, 1100-048 Lisboa",
+        "phone": "+351 21 765 4321",
+        "website": "https://piriquita.pt/",
+        "image": "casa-periquita.avif",
+        "membership": 2,
+        "description": "Charming cafe offering gourmet coffee and traditional Portuguese pastries."
+    },
+    {
+        "name": "Fitness Factory",
+        "address": "Rua do Comércio 125, 1100-150 Lisboa",
+        "phone": "+351 21 334 5566",
+        "website": "https://www.fitnessfactory.pt/",
+        "image": "fitness-factory.avif",
+        "membership": 3,
+        "description": "Modern fitness club with top-tier equipment and comprehensive wellness programs."
+    },
+    {
+        "name": "Solaris Renewables",
+        "address": "Parque das Nações, 1990-100 Lisboa",
+        "phone": "+351 21 654 7890",
+        "website": "https://solarisrenewables.com/",
+        "image": "solaris-renewables.avif",
+        "membership": 2,
+        "description": "Premier provider of renewable energy solutions, focusing on sustainability and innovation."
+    },
+    {
+        "name": "Pingo Doce",
+        "address": "Rua Garrett 28, 1200-309 Lisboa",
+        "phone": "+351 21 876 5432",
+        "website": "https://www.pingodoce.pt/",
+        "image": "pingo-doce.avif",
+        "membership": 3,
+        "description": "Popular supermarket chain offering a wide range of groceries, fresh produce, and household items."
+    },
+    {
+        "name": "Portugália Restaurante",
+        "address": "Alameda dos Oceanos 90, 1990-120 Lisboa",
+        "phone": "+351 21 345 6789",
+        "website": "https://www.portugalia.pt/",
+        "image": "portugalia-restaurante.avif",
+        "membership": 3,
+        "description": "Famous restaurant serving traditional Portuguese dishes with a contemporary twist."
+    },
+    {
+        "name": "Lisboa Turismo",
+        "address": "Avenida Infante Dom Henrique, 1950-008 Lisboa",
+        "phone": "+351 21 987 6543",
+        "website": "https://www.visitlisboa.com/pt-pt",
+        "image": "lisboa-turismo.avif",
+        "membership": 1,
+        "description": "Reliable travel agency offering tailored travel packages and unique experiences in Portugal."
+    }
+    
+]

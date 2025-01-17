@@ -1,0 +1,72 @@
+/* Responsive Design */
+@media only screen and (min-width: 38rem) {
+    #hamburger {
+        display: none;
+    }
+
+    nav ul.menuLinks, nav ul.menuLinks.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.menuLinks a:hover {
+        background-color: #3b6e5d;
+        color: var(--background-color);
+    }
+
+    #animation {
+        grid-template-rows: 1fr;
+    }
+
+    /* Grid and List */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+        align-items: center;
+    }
+
+    .grid section {
+        min-height: 420px;
+    }
+
+    .list section {
+        grid-template-columns: repeat(5, 1fr);
+    }
+ 
+    .list section #member, 
+    .list section #address {
+        display: grid;
+    }
+
+    /* Footer */
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+    footer .contact-info {
+        text-align: start;
+    }
+
+    footer .footer-info {
+        text-align: end;
+    }
+}
+
+@media only screen and (min-width: 57rem) {
+    /* Grid and List */
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .list section {
+        grid-template-columns: repeat(6, 1fr);
+    }
+ 
+    .list section #descript {
+        display: grid;
+        text-align: center;
+    }
+}
