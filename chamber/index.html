@@ -15,7 +15,8 @@
     <title>Chamber of Commerce Home</title>
 
     <!-- API Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
@@ -34,10 +35,11 @@
                 <h1>Portugal</h1>
                 <p>Chamber of Commerce</p>
             </div>
-            <button id="hamburger"></button>
+            <button id="hamburger" aria-label="Open navigation menu"></button>
         </div>
     </header>
-    <nav id="animation">
+
+    <nav id="animation" role="navigation">
         <ul class="menuLinks">
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
@@ -53,11 +55,12 @@
             <a href="join.html" class="cta-button">Join the Chamber</a>
         </section>
 
+        <!-- Title -->
         <section id="title-home">
             <h2>Home</h2>
         </section>
 
-        <section class="grid-layout">
+        <div class="grid-layout">
             <!-- Events Section -->
             <section id="events">
                 <h2>Current Events</h2>
@@ -84,7 +87,7 @@
 
                     <!-- Icon -->
                     <div class="weather-icon">
-                        <img id="weather-img" src="#" alt="Weather Icon"/>
+                        <img id="weather-img" src="#" alt="Current weather icon"/>
                     </div>
 
                     <!-- Details -->
@@ -109,7 +112,7 @@
                     <li>Next Day: <span id="forecast-next">Loading...</span></li>
                 </ul>
             </section>
-        </section>
+        </div>
 
         <!-- Company Spotlights Section -->
         <section id="spotlights">

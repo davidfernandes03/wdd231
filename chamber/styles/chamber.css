@@ -199,6 +199,8 @@ main {
     background-color: #f9f9f9;
     border-end-start-radius: 10px;
     border-end-end-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: none;
 }
 
 .grid-layout h2 {

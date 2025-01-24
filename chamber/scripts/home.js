@@ -26,6 +26,16 @@ async function fetchMembers() {
     }
 }
 
+// Membership Level
+function getMembershipLevel(level) {
+    switch (level) {
+        case 1: return 'Member';
+        case 2: return 'Silver';
+        case 3: return 'Gold';
+        default: return 'Unknown';
+    }
+}
+
 // Home
 function displaySpotlights(members) {
     console.log('Spotlights function called');
@@ -61,16 +71,6 @@ function displaySpotlights(members) {
 
         spotlightContainer.appendChild(card);
     });
-}
-
-// Membership Level
-function getMembershipLevel(level) {
-    switch (level) {
-        case 1: return 'Member';
-        case 2: return 'Silver';
-        case 3: return 'Gold';
-        default: return 'Unknown';
-    }
 }
 
 fetchMembers();
