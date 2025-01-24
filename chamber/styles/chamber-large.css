@@ -1,5 +1,6 @@
 /* Responsive Design */
 @media only screen and (min-width: 38rem) {
+    /* Header and Nav */
     #hamburger {
         display: none;
     }
@@ -18,7 +19,28 @@
         grid-template-rows: 1fr;
     }
 
-    /* Grid and List */
+    /* Footer */
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+    footer .contact-info {
+        text-align: start;
+    }
+
+    footer .footer-info {
+        text-align: end;
+    }
+
+    /* HOME PAGE */
+    /* Spotlight Scetion */
+    .spotlight-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* DIRECTORY PAGE */
     .grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -38,25 +60,26 @@
     .list section #address {
         display: grid;
     }
-
-    /* Footer */
-    footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        align-items: center;
-    }
-
-    footer .contact-info {
-        text-align: start;
-    }
-
-    footer .footer-info {
-        text-align: end;
-    }
 }
 
 @media only screen and (min-width: 57rem) {
-    /* Grid and List */
+    /* HOME PAGE */
+    .cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    /* Grid Layout */
+    .grid-layout {
+        grid-template-columns: 2fr auto auto;
+    }
+
+    /* Spotlight Scetion */
+    .spotlight-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* DIRECTORY PAGE */
     .grid {
         grid-template-columns: repeat(3, 1fr);
     }

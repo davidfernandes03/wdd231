@@ -13,29 +13,21 @@ document.getElementById("current-year").textContent = new Date().getFullYear();
 // Get last modification
 document.getElementById("lastModified").textContent = `Last Modification: ${document.lastModified}`
 
-// Toggle between grid and list view
-document.getElementById('grid-view').addEventListener('click', () => {
-    document.querySelector('.directory-content').classList.add('grid');
-    document.querySelector('.directory-content').classList.remove('list');
-});
-document.getElementById('list-view').addEventListener('click', () => {
-    document.querySelector('.directory-content').classList.add('list');
-    document.querySelector('.directory-content').classList.remove('grid');
-});
-
 // Fetch members.json file
 async function fetchMembers() {
     try {
         const response = await fetch('data/members.json');
         const members = await response.json();
 
-        displayMembers(members);
+        displayDirectory(members);
+
     } catch (error) {
         console.error(`Error fetching member data: ${error}`);
     }
 }
 
-function displayMembers(members) {
+// Directory
+function displayDirectory(members) {
     const directoryContent = document.querySelector('.directory-content');
     directoryContent.innerHTML = '';
 
@@ -59,6 +51,17 @@ function displayMembers(members) {
     });
 }
 
+// Toggle between grid and list view
+document.getElementById('grid-view').addEventListener('click', () => {
+    document.querySelector('.directory-content').classList.add('grid');
+    document.querySelector('.directory-content').classList.remove('list');
+});
+document.getElementById('list-view').addEventListener('click', () => {
+    document.querySelector('.directory-content').classList.add('list');
+    document.querySelector('.directory-content').classList.remove('grid');
+});
+
+// Membership Level
 function getMembershipLevel(level) {
     switch (level) {
         case 1: return 'Member';
