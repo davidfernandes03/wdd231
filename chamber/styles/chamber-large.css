@@ -1,5 +1,5 @@
 /* Responsive Design */
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 39rem) {
     /* Header and Nav */
     #hamburger {
         display: none;
@@ -59,6 +59,19 @@
     .list section #member, 
     .list section #address {
         display: grid;
+    }
+
+    /* JOIN PAGE */
+    #join-main {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .membership-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 0px;
     }
 }
 

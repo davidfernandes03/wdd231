@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join page for the Chamber of Commerce site, featuring current events, current weather, forecast and business spotlights.">
+    <meta name="author" content="David da Rocha Fernandes">
+
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Portugal Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://davidfernandes03.github.io/wdd231/chamber/images/portugal-cc-img.avif">
+    <meta property="og:url" content="https://davidfernandes03.github.io/wdd231/chamber/directory.html">
+
+    <title>Chamber of Commerce Join</title>
+
+    <!-- API Google Fonts -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.avif" alt="Chamber of Commerce Logo">
+            <div class="title">
+                <h1>Portugal</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+            <button id="hamburger" aria-label="Open navigation menu"></button>
+        </div>
+    </header>
+
+    <nav id="animation" role="navigation">
+        <ul class="menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="active"><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main id="join-main">
+        <form method="get" action="thankyou.html">
+            <!-- Nome -->
+            <label>
+                First Name:
+                <input type="text" name="first_name" required autocomplete="given-name" title="Enter your first name">
+            </label>
+          
+            <!-- Sobrenome -->
+            <label>
+                Last Name:
+                <input type="text" name="last_name" required autocomplete="family-name" title="Enter your last name">
+            </label>
+          
+            <!-- Título na Organização -->
+            <label>
+                Organizational Title:
+                <input type="text" name="organization_title" pattern="[A-Za-z\-\s]{7,}" autocomplete="organization-title" title="Only letters, hyphens, and spaces. Minimum 7 characters.">
+            </label>
+          
+            <!-- Email -->
+            <label>
+                Email:
+                <input type="email" name="email" required autocomplete="email" placeholder="example@domain.com" title="Enter a valid email address">
+            </label>
+          
+            <!-- Telefone -->
+            <label>
+                Mobile Phone:
+                <input type="tel" name="phone" required autocomplete="tel" title="Enter your mobile number">
+            </label>
+          
+            <!-- Nome da Organização -->
+            <label>
+                Business/Organization Name:
+                <input type="text" name="organization" required autocomplete="organization" title="Enter your organization name">
+            </label>
+          
+            <!-- Seleção de Nível de Associação -->
+            <label>
+                Membership Level:
+                <select name="membership" required>
+                    <option value="" disabled selected>Select a membership level</option>
+                    <option value="np">NP Membership (No Fee)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+          
+            <!-- Descrição da Organização -->
+            <label>
+                Business/Organization Description:
+                <textarea name="description" title="Provide a brief description of your business"></textarea>
+            </label>
+          
+            <!-- Timestamp (Preenchido via JS) -->
+            <input type="hidden" name="timestamp" id="timestamp">
+          
+            <!-- Botão de Envio -->
+            <button type="submit">Submit Application</button>
+        </form>
+
+        <!-- Cards de Níveis de Associação -->
+        <div class="membership-cards">
+            <div class="card" id="np-card">
+                <h3>NP Membership</h3>
+                <p>No Fee - Ideal for non-profits.</p>
+                <a href="#" class="more-info" data-level="np">More Info</a>
+            </div>
+            <div class="card" id="bronze-card">
+                <h3>Bronze Membership</h3>
+                <p>Basic benefits package.</p>
+                <a href="#" class="more-info" data-level="bronze">More Info</a>
+            </div>
+            <div class="card" id="silver-card">
+                <h3>Silver Membership</h3>
+                <p>Extra visibility & discounts.</p>
+                <a href="#" class="more-info" data-level="silver">More Info</a>
+            </div>
+            <div class="card" id="gold-card">
+                <h3>Gold Membership</h3>
+                <p>Premium benefits & promotion.</p>
+                <a href="#" class="more-info" data-level="gold">More Info</a>
+            </div>
+        </div>
+
+        <dialog class="modal">
+            <h2>NP Membership</h2>
+            <ul>
+                <li>✔ No membership fee</li>
+                <li>✔ Access to networking events</li>
+                <li>✔ Community support & collaboration</li>
+                <li>✔ Free business listing in directory</li>
+                <li>✔ Volunteer and partnership opportunities</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+        
+        <dialog class="modal">
+            <h2>Bronze Membership</h2>
+            <ul>
+                <li>✔ Basic marketing package</li>
+                <li>✔ Discounted event participation</li>
+                <li>✔ Small ad space on the website</li>
+                <li>✔ Access to training workshops</li>
+                <li>✔ Business networking opportunities</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+        
+        <dialog class="modal">
+            <h2>Silver Membership</h2>
+            <ul>
+                <li>✔ Enhanced business exposure</li>
+                <li>✔ Priority access to networking events</li>
+                <li>✔ Special discounts on promotional campaigns</li>
+                <li>✔ Featured directory listing</li>
+                <li>✔ Free access to select training sessions</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+        
+        <dialog class="modal">
+            <h2>Gold Membership</h2>
+            <ul>
+                <li>✔ Premium business promotion</li>
+                <li>✔ Featured ad placement on homepage</li>
+                <li>✔ VIP access to exclusive events</li>
+                <li>✔ Free participation in business expos</li>
+                <li>✔ Personalized marketing consultation</li>
+                <li>✔ Leadership opportunities within the Chamber</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p><strong>Portugal Chamber of Commerce</strong></p>
+            <p>Rua Vasco da Gama, 1250</p>
+            <p>Portugal, Lisbon 231</p>
+            <p>info@portugalcc.org</p>
+            <p>(351) 555-2300</p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.youtube.com/@byui" target="_blank"><img src="images/logo-youtube-64px.png" alt="Youtube"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/logo-twitter-64px.png" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/in/david-fernandes-853277288/" target="_blank"><img src="images/logo-linkedin-64px.png" alt="LinkedIn"></a>
+        </div>
+        <div class="footer-info">
+            <p>WDD 231 Class Project</p>
+            <p>David Fernandes</p>
+            <p class="first-line">&copy;<span id="current-year"></span> Portugal Chamber of Commerce</p>
+            <p id="lastModified" class="second-line"></p>
+        </div>
+    </footer>
+
+    <script src="scripts/join.js" defer></script>
+</body>
