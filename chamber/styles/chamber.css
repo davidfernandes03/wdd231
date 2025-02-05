@@ -30,6 +30,7 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     margin: auto;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -428,9 +429,7 @@ section a:hover {
 	display: none;
 }
 
-.list section h3 {
-	font-size: 1rem;
-}
+.list section h3 { font-size: 1rem; }
 
 
 /* JOIN PAGE */
@@ -460,7 +459,7 @@ input, textarea, select {
 select { cursor: pointer; }
 textarea { resize: vertical; }
 
-form button, .back-home {
+form button, .back-home, .learn-more {
     background-color: var(--button);
     color: var(--basic-white);
     padding: 10px 15px;
@@ -472,7 +471,7 @@ form button, .back-home {
     transition: background-color 0.3s ease;
 }
 
-form button:hover, .back-home:hover {
+form button:hover, .back-home:hover, .learn-more:hover {
     background-color: var(--button-hover);
     color: var(--basic-white);
     text-decoration: none;
@@ -515,9 +514,7 @@ form button:hover, .back-home:hover {
     transition: 0.3s;
 }
 
-.more-info:hover {
-    background: var(--button-hover);
-}
+.more-info:hover { background: var(--button-hover); }
 
 /* Modals */
 .modal {
@@ -543,9 +540,7 @@ form button:hover, .back-home:hover {
     padding: 5px;
 }
 
-.modal::backdrop {
-    background: rgba(0, 0, 0, 0.5);
-}
+.modal::backdrop { background: rgba(0, 0, 0, 0.5); }
 
 .close-modal {
     margin-top: 1rem;
@@ -557,9 +552,7 @@ form button:hover, .back-home:hover {
     cursor: pointer;
 }
 
-.close-modal:hover {
-    background: #a71d2a;
-}
+.close-modal:hover { background: #a71d2a; }
 
 @keyframes fadeIn {
     from {
@@ -602,6 +595,92 @@ form button:hover, .back-home:hover {
 .thank-you-container h1 { color: var(--text-color); }
 .thank-you-container p { font-size: 1rem; }
 .form-summary p span { word-break: break-all; }
+
+
+/* DISCOVER PAGE */
+.intro {
+    text-align: center;
+    background-color: var(--background-color);
+    border: none;
+    margin-bottom: 10px;
+}
+
+.intro h1 {
+    color: var(--text-color);
+}
+
+.visit-message {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#visit-info {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+.discover-card {
+    display: grid;
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    grid-template-areas:
+        "title"
+        "image"
+        "description"
+        "address"
+        "button";
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.discover-card h2 {
+    grid-area: title;
+    background-color: var(--text-color);
+    color: var(--basic-white);
+    margin-bottom: 10px;
+    padding: 0px 10px;
+    text-align: center;
+}
+
+.discover-card figure {
+    grid-area: image;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.discover-card img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.discover-card p {
+    grid-area: description;
+}
+
+.discover-card address {
+    grid-area: address;
+    font-style: normal;
+    color: #555;
+}
+
+.learn-more {
+    grid-area: button;
+    margin: 10px auto 0;
+    width: 100%;
+}
 
 
 /* Footer Styles */

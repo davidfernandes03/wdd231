@@ -59,7 +59,7 @@ function displaySpotlights(members) {
             <h4>${getMembershipLevel(member.membership)}</h4>
             <div class="spotlight-details">
                 <div class="spotlight-logo">
-                    <img src="images/${member.image}" alt="${member.name} Logo">
+                    <img src="images/home-directory-img/${member.image}" alt="${member.name} Logo">
                 </div>
                 <ul class="spotlight-info">
                     <li><strong>Address:</strong> ${member.address}</li>

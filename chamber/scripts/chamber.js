@@ -37,7 +37,7 @@ function displayDirectory(members) {
 
         memberCard.innerHTML = `
             <section>
-                <img src="images/${member.image}" alt="${member.name} Logo">
+                <img src="images/home-directory-img/${member.image}" alt="${member.name} Logo">
                 <h3>${member.name}</h3>
                 <p id="address">${member.address}</p>
                 <p>${member.phone}</p>

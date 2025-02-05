@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Belém Tower",
+        "address": "Av. Brasília, 1400-038 Lisbon, Portugal",
+        "description": "An iconic 16th-century tower and a UNESCO World Heritage site.",
+        "image": "torre-belem.webp"
+    },
+    {
+        "name": "Jerónimos Monastery",
+        "address": "Praça do Império, 1400-206 Lisbon, Portugal",
+        "description": "A stunning monastery from the Age of Discoveries.",
+        "image": "mosteiro-jeronimos.webp"
+    },
+    {
+        "name": "São Jorge Castle",
+        "address": "R. de Santa Cruz do Castelo, 1100-129 Lisbon, Portugal",
+        "description": "A medieval fortress with breathtaking city views.",
+        "image": "castelo-sao-jorge.webp"
+    },
+    {
+        "name": "Commerce Square",
+        "address": "Praça do Comércio, 1100-148 Lisbon, Portugal",
+        "description": "One of Lisbon's most famous squares, featuring beautiful architecture and restaurants.",
+        "image": "praca-comercio.webp"
+    },
+    {
+        "name": "Santa Justa Lift",
+        "address": "R. do Ouro, 1150-060 Lisbon, Portugal",
+        "description": "A historic elevator offering incredible panoramic views.",
+        "image": "elevador-santa-justa.webp"
+    },
+    {
+        "name": "Lisbon Oceanarium",
+        "address": "Esplanada Dom Carlos I s/nº, 1990-005 Lisbon, Portugal",
+        "description": "One of Europe's largest aquariums, home to a variety of marine species.",
+        "image": "oceanario-lisboa.webp"
+    },
+    {
+        "name": "Monument to the Discoveries",
+        "address": "Av. Brasília, 1400-038 Lisbon, Portugal",
+        "description": "A monument honoring Portuguese explorers.",
+        "image": "padrao-descobrimentos.webp"
+    },
+    {
+        "name": "Eduardo VII Park",
+        "address": "Av. Sidónio Pais, 1070-051 Lisbon, Portugal",
+        "description": "The largest park in central Lisbon, perfect for walks.",
+        "image": "parque-eduardo.webp"
+    }
+]

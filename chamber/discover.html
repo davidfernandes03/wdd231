@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover page for the Chamber of Commerce site, featuring current events, current weather, forecast and business spotlights.">
+    <meta name="author" content="David da Rocha Fernandes">
+
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Portugal Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://davidfernandes03.github.io/wdd231/chamber/images/portugal-cc-img.avif">
+    <meta property="og:url" content="https://davidfernandes03.github.io/wdd231/chamber/directory.html">
+
+    <title>Chamber of Commerce Discover</title>
+
+    <!-- API Google Fonts -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="stylesheet" href="styles/disc-medium-large.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.avif" alt="Chamber of Commerce Logo">
+            <div class="title">
+                <h1>Portugal</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+            <button id="hamburger" aria-label="Open navigation menu"></button>
+        </div>
+    </header>
+
+    <nav id="animation" role="navigation">
+        <ul class="menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li class="active"><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h1>Discover Lisbon</h1>
+            <p>Explore the rich history, culture, and attractions of Lisbon.</p>
+        </section>
+    
+        <section class="visit-message">
+            <p id="visit-info"></p>
+        </section>
+    
+        <section class="discover-grid">
+            <!-- Cards -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p><strong>Portugal Chamber of Commerce</strong></p>
+            <p>Rua Vasco da Gama, 1250</p>
+            <p>Portugal, Lisbon 231</p>
+            <p>info@portugalcc.org</p>
+            <p>(351) 555-2300</p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.youtube.com/@byui" target="_blank"><img src="images/logo-youtube-64px.png" alt="Youtube"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/logo-twitter-64px.png" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/in/david-fernandes-853277288/" target="_blank"><img src="images/logo-linkedin-64px.png" alt="LinkedIn"></a>
+        </div>
+        <div class="footer-info">
+            <p>WDD 231 Class Project</p>
+            <p>David Fernandes</p>
+            <p class="first-line">&copy;<span id="current-year"></span> Portugal Chamber of Commerce</p>
+            <p id="lastModified" class="second-line"></p>
+        </div>
+    </footer>
+
+    <script src="scripts/discover.js" defer></script>
+</body>
+</html>
