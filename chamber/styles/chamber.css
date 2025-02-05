@@ -598,11 +598,8 @@ form button:hover, .back-home:hover, .learn-more:hover {
 
 
 /* DISCOVER PAGE */
-.intro {
-    text-align: center;
-    background-color: var(--background-color);
-    border: none;
-    margin-bottom: 10px;
+.discover-main  h1 {
+    color: var(--text-color);
 }
 
 .intro h1 {
@@ -611,7 +608,7 @@ form button:hover, .back-home:hover, .learn-more:hover {
 
 .visit-message {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px 0px;
 }
 
 #visit-info {
